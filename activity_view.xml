@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundphone"
+    android:fitsSystemWindows="true"
+    tools:context=".ViewActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of Title: "
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+
+    <ListView
+        android:id="@+id/listtitle"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#ffffff"
+        android:listSelector="@drawable/list_selector"
+        android:theme="@style/BoldListViewItem"/>  <!-- Áp dụng style -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center"> <!-- căn giữa hàng ngang -->
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/viewcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contents: "
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:minHeight="30dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/resultcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="70dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/edit_text_background" />
+
+
+
+
+</LinearLayout>
